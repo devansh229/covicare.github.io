@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>CoviCare</title>
+
+  <!-- google fonts -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,600&family=Ubuntu:ital@1&display=swap" rel="stylesheet">
+
+  <!-- css style sheets -->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- font awesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+  <!-- bootstrip scripts -->
+  <script src="https://kit.fontawesome.com/1c9ad4b785.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <section id="title">
+    <div class="container-fluid">
+    
+
+    <!-- Nav Bar --> 
+    <nav class="navbar  navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" href="">CoviCare</a>
+  
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto"> 
+          <li class="nav-item">
+            <a class="nav-link" href="#testimonials">About</a>
+             
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#sys">Symptoms</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#pricing">Prevention</a>
+          </li>
+        
+      </ul>
+   </div>
+  </nav>
+
+    <!-- Title -->
+   <div class="row">
+        <div class="col-lg-6">
+            <h5>Covid-19 AWARENESS</h5>
+          <h1>Stay Safe. Stay Home</h1>
+          <button href ="#pricing" type="button" class="btn btn-dark btn-lg">How to Prevent</button>
+         
+        </div>
+    <div class="col-lg-6">
+      <img class="title-image" src="images/image.jpg" alt="covid image">
+    </div>
+  
+   </div>
+
+  </section>
+
+
+  <!-- Features -->
+  
+
+  <section id="features">
+    <div class="covi ">
+      <h1>Coronavirus Statistics</h1>
+    </div>
+      <div class="row">
+  
+        <div class="feature-box col-lg-4 ">
+          
+          <h4>TOTAL CONFIRMED</h4>
+          <h2><%= active %> </h2>
+          <p>+<%=newcase %> </p>
+         </div>
+        
+        <div class="feature-box col-lg-4">
+          
+          <h4>DEATHS</h4>
+          <h2><%= death  %> </h2>
+          <p>+<%= newdeath %> </p>
+        
+        </div>
+  
+        <div class="feature-box col-lg-4">
+          
+          <h4>RECOVERED CASES</h4>
+          <h2><%= recover %> </h2>
+          <p>+<%= newrecover %> </p>
+          
+        </div>
+  
+      </div>
+
+
+
+  </section>
+
+</div>
+  <!-- Testimonials -->
+
+  <section id="testimonials">
+
+      <div class="carousel-inner">
+     
+        <div class="skill-row">
+          <img class="w2-image" src="images/covid.jpeg" alt="img">
+          <h1>What is Coronavirus?</h1>
+          <p>
+            <ul>
+              <li>Coronavirus disease (COVID-19) is an infectious disease caused by a newly discovered coronavirus.</li>
+              <li>Most people infected with the COVID-19 virus will experience mild to moderate respiratory illness and recover without requiring special treatment.</li>
+           <li>Older people, and those with underlying medical problems like cardiovascular disease, diabetes and cancer are likely to develop illness.
+           </li>
+            </ul>   </p>
+        </div>
+       
+        </div>
+   
+  </section>
+
+
+
+
+  <!-- Pricing -->
+<div class="cont">
+  <section id="pricing">
+ <div class="corona">
+  <h1>How to Prevent Coronavirus?</h1>
+  
+ </div>
+   
+<div class="row ">
+  <div class="pricing-col col-lg-6 md-4 sm-12">
+      <div class="card ">
+        <div class="card-header ">
+          <img src="images/house1.png" alt="house img">
+        </div>
+      <div class="card-body">
+       
+        <p>Stay at home</p>
+      
+      </div>
+      </div>
+      </div>
+
+  <div class="pricing-col col-lg-6 md-4 sm-12">
+      <div class="card  ">
+        <div class="card-header">
+          <img src="images/sd.jpg" alt="social distancing img">
+        </div>
+        <div class="card-body">
+         
+          <p>Keep social distancing</p>
+        
+        </div>
+      </div>
+    </div>
+
+    <div class="pricing-col col-lg-6 md-4 sm-12">
+        <div class="card ">
+          <div class="card-header">
+            <img src="images/mask.jpeg" alt="mask img">
+          </div>
+          <div class="card-body">  
+                 
+            <p>Wear your facemask</p>      
+          </div>
+        </div>
+    </div>
+
+    <div class="pricing-col col-lg-6 md-4 sm-12">
+      <div class="card ">
+        <div class="card-header">
+          <img src="images/hand1.png" alt="hand img">
+        </div>
+        <div class="card-body">
+         
+          <p>Wash your hand</p>  
+           
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+  <!-- Call to Action -->
+
+  <section id="cta">
+
+   <p>What you need to do</p>
+    <h1>How To Protect Yourself</h1>
+    <img class="pro-img" src="images/protect.png" alt="protect img">
+    <div class=" do col-lg-6 ">
+     <h3>You should do</h3>
+      <ul>
+        <li>Stay at home</li>
+        <li>Wear mask</li>
+        <li>Use Sanitizer</li>
+        <li>Disinfect your home</li>
+        <li>Wash your hands</li>
+      </ul></div>
+
+
+<div class="cta2 col-lg-6">
+
+ <h3>You should avoid</h3>
+  <ul>
+    <li>Avoid infected people</li>
+    <li>Avoid animals</li>
+    <li>Avoid handshaking</li>
+    <li>Don't touch your face</li>
+    <li>Aviod infected surfaces</li>
+  </ul>
+</div>
+      
+  </section>
+
+
+  <section id="sys">
+  <div class="container">
+    
+  
+      <h1>Symptoms of Coronavirus</h1>
+      <div class="Symptom col-md-6 mb-4">
+         <div class="card ">
+            <div class="card-header">
+               <img class="fev" src="images/fever.png" alt="fever img">
+                <h6>High Fever</h6>
+                <div class="pr"> 
+                <p>
+                    A high fever is when the body temperature rises above 103 degrees Fahrenheit in an adult (or above 101 degrees Fahrenheit in a child).</p>
+                  </div>
+                  </div>
+            </div>
+         </div>
+
+                   <div class="Symptom col-md-6 mb-4">
+                       <div class="card">
+                           <div class="card-header">
+                             <img class="fev" src="images/symptom_cough.png" alt="cough img">
+                                  <h6>Cough</h6>
+                                  <div class="pr">
+                                   <p>
+                                    A cough is your body's way of responding when something irritates your throat or airways. An irritant stimulates nerves that send a message to your brain.</p>
+                                  </div>
+                                  </div>
+                          </div>
+                      </div>
+
+                           <div class="Symptom col-md-6 mb-4">
+                              <div class="card ">
+                                 <div class="card-header">
+                                    <img class="fev" src="images/symptom_sore-troath.png" alt="sore img">
+                                   <h6>Sore Troath</h6>
+                                  
+                                     <p>
+                                      A sore throat is pain, scratchiness or irritation of the throat that often worsens when you swallow. </p>
+                                    </div>
+                               
+                                </div>
+                             </div>
+
+                                    <div class="Symptom col-md-6 mb-4">
+                                       <div class="card ">
+                                          <div class="card-header">
+                                            <img class="fev" src="images/symptom_headache.png" alt="headache img">
+                                                 <h6>Headache</h6>
+                                               
+                                                 <p>
+                                                    Headaches are a common health problem — most people experience them at some time.</p>
+                                                 
+                                                  </div>
+                                         </div>
+                                       </div>
+   </div>
+ </section>
+
+
+
+
+  <!-- Footer -->
+
+      
+
+
+
+  <footer id="footer">
+   
+    <div class="foo">
+    <i class="social-icon fab fa-twitter"></i>
+    <i class="social-icon fab fa-facebook"></i>
+    <i class="social-icon fab fa-instagram"></i>
+    <i class="social-icon fas fa-envelope"></i>
+    <h5>Copyright ©2021 All rights reserved | This template is made with ❤ by Devansh Pandey</h5>
+  </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<!--   
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="app.js" charset="utf-8"></script> -->
+</body>
+
+</html>
